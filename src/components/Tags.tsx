@@ -33,7 +33,8 @@ const Tags: React.FC = () => {
   return (
     <>
       {loadingState && <Loader />}
-      {!errorState ? <DataTable /> : <div>Error: {errorState.message}</div>}
+      {errorState && <div>Error: {errorState.message}</div>}
+      {!loadingState && !errorState && <DataTable />}
     </>
   );
 };

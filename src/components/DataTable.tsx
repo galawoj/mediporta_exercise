@@ -1,6 +1,5 @@
 import * as React from "react";
 import { DataGrid, GridColDef } from "@mui/x-data-grid";
-import Tag from "../models/tag";
 import { useAppContext } from "../store/AppContext";
 
 const columns: GridColDef[] = [
